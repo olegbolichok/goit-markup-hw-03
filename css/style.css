@@ -185,6 +185,10 @@ padding-bottom: 94px;
 .staff-list{
     display: flex;
 }
+.staff-list li{
+    background-color: var(--primary-background-color);
+    border-radius: 0 0 4px 4px;
+}
 .staff-list li:not(:last-child){
     margin-right: 30px;
 }
