@@ -132,7 +132,7 @@ margin-right: 93px;
 padding-top: 94px;    
 padding-bottom: 94px;
 }
-.feature-list li {
+.feature-list .item {
     width: 270px;
 }
 .feature-list .title {color: var(--title-text-color);
@@ -163,36 +163,35 @@ padding-bottom: 94px;
 .staff .container{
     padding: 94px 0;
 }
-.staff-list img{
-    margin-bottom: 30px;
-}
 .staff-list .title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-
-    margin-bottom: 10px;
 }
 .staff-list p {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    
-    margin-bottom: 30px;
+
 }
 .staff-list{
     display: flex;
 }
-.staff-list li{
+.staff-list .item{
     background-color: var(--primary-background-color);
     border-radius: 0 0 4px 4px;
+
+    width: 270px;
 }
 .staff-list li:not(:last-child){
     margin-right: 30px;
 }
-
+.staff-list .position{
+    padding: 30px 0;
+}
+.position h3{margin-bottom: 10px;}
 footer {
     background-color: var(--footer-background-color);
 }
@@ -215,7 +214,7 @@ footer .container{
 .contact-list a {
     color: rgba(255, 255, 255, 0.6);
 }
-.contact-list li{
+.contact-list li:not(:last-child){
     margin-bottom: 9px;
 }
 .contact-list li:hover,.contact-list li:focus{
@@ -267,6 +266,10 @@ justify-content: center;}
     
 /* Portfolio styles */
 
+
+.example-box{
+    padding-bottom: 94px;
+}
 .example-filter {
     display: flex;
     justify-content: center;
@@ -288,7 +291,9 @@ justify-content: center;}
 .example-list li:nth-last-child(-n+3){
     margin-bottom: 0;
 }
-.example-list li:nth-child(3n){margin-right: 0;}
+.example-list li:nth-child(3n){
+    margin-right: 0;
+}
 .example-list .title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -301,16 +306,10 @@ justify-content: center;}
     font-size: 16px;
     line-height: 1.88;
 }
-.example-list img {
-    margin-bottom: 20px;
+.example-list .description{
+    padding: 20px 0 20px 24px;
+    justify-content: flex-start;
 }
-.example-list h3 {
+.description .title{
     margin-bottom: 4px;
-    margin-right: 24px;
-    margin-left: 24px;
-}
-.example-list p {
-    margin-bottom: 20px;
-    margin-right: 24px;
-    margin-left: 24px;
 }
